@@ -1,0 +1,117 @@
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "./variables.scss";
+@import "../../node_modules/bootstrap/scss/mixins";
+.body {
+    background-color: rgb(250,251,252);
+}
+.wrapper {
+    max-width: 1260px;
+    margin: 0 auto;
+    position: relative;
+    .d-none {
+        display: none;
+    }
+    .d-block {
+        display: block;
+    }
+    .press-and-hold {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        margin-top: -169px;
+        margin-left: -271px;
+        box-shadow: 0 2px 9px -1px rgba(0, 0, 0, 0.13);
+        font-family: 'Roboto', sans-serif; 
+        text-align: center;
+        .before-text {
+            color: #626364;
+            font-size: 29px;
+            line-height: 0.83;
+            margin: 67px 0 33px;
+            font-weight: 500;
+        }
+        .press-text {
+            font-size: 18px;
+            line-height: 23px;
+            color: rgb(98, 99, 100);
+            margin: 0 0 29px;
+        }
+        .main-action {
+            min-height: 82px;
+        }
+        .press-button {
+            position: relative;
+            color: rgb(87,136,195);
+            width: 250px;
+            border-radius: 60px;
+            border: 1px solid rgb(87,136,195);
+            padding: 14px;
+            margin: 0 auto;
+            font-size: 20px;
+            cursor: pointer;
+            animation-name: fade-color;
+            animation-duration: 8s;
+        }
+        .press-button-slider {
+            position: absolute;
+            color: green;
+            margin: 0 auto;
+            width: 250px;
+            height: 24px;
+            padding: 14px;
+            border-radius: 60px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            font-size: 20px;
+            left: 24%;
+            animation-name: slide;
+            animation-duration: 8s;
+            margin-top: 1px;
+        }
+        @keyframes slide {
+            from{
+                width: 0px;
+                background-color: #fafbfc;
+                color:  rgb(87,136,195);
+            }
+            to {
+                width: 250px;
+                background-color:  rgb(87,136,195);
+                color: #fafbfc;
+                border-top-right-radius: 60px;
+                border-bottom-right-radius: 60px;
+            }
+        }
+        @keyframes fade-color {
+            from{
+                color: rgb(87,136,195);
+            }
+            to {
+                color: #fafbfc;
+            }
+        }
+        .error-message {
+            color: #e50e08;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .having-problems {
+            font-size: 12px;
+            line-height: 21px;
+            color: #b1b5b8;
+        }
+        .referance {
+            font-size: 10px;
+            line-height: 2.7;
+            color: #b1b5b8;
+            background-color: #fafbfc;
+            margin: 11px 0 0;
+        }
+        @media screen and (min-width: 480px) {
+            width: 538px;
+            height: 340px;
+        }
+    }
+}

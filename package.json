@@ -1,0 +1,28 @@
+{
+  "name": "press-and-hold",
+  "version": "1.0.0",
+  "description": "this is for press and hold functionality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "gulp": "^4.0.2",
+    "sass": "^1.69.6",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhishek8690/press-and-hold.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abhishek8690/press-and-hold/issues"
+  },
+  "homepage": "https://github.com/Abhishek8690/press-and-hold#readme"
+}
